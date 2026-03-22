@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 def load_css():
@@ -6,8 +5,13 @@ def load_css():
         """
         <style>
         /* ===== GLOBAL APP STYLES ===== */
+        :root {
+            --bottombar-height: 52px;
+        }
+
         .stApp {
             background-color: #eef1f8;
+            padding-bottom: var(--bottombar-height); /* Prevent overlap */
         }
 
         /* Headings */
@@ -20,17 +24,20 @@ def load_css():
             font-size: 1.2rem;
         }
 
-        /* ===== TOP BAR STYLES ===== */
+        /* ===== BOTTOM BAR STYLES ===== */
         .top-bar {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
+            height: var(--bottombar-height);
             background: linear-gradient(90deg, #2563eb, #4f46e5, #2563eb);
             color: white !important;
             font-weight: 600;
-            padding: 10px 0;
-            z-index: 999999; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999999;
             overflow: hidden;
             text-align: center;
         }
@@ -44,12 +51,7 @@ def load_css():
 
         @keyframes moveText {
             from { transform: translateX(100%); }
-            to { transform: translateX(-100%); }
-        }
-
-        /* Ensure content doesn't hide under the bar on any page */
-        .main .block-container {
-            padding-top: 70px !important;
+            to   { transform: translateX(-100%); }
         }
 
         /* ===== FLOATING BACKGROUND SHAPES ===== */
@@ -66,10 +68,10 @@ def load_css():
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50%      { transform: translateY(-20px); }
         }
 
-        /* ===== UNIVERSAL BUTTON STYLE (From your original) ===== */
+        /* ===== UNIVERSAL BUTTON STYLE ===== */
         button {
             background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
             color: white !important;
@@ -80,7 +82,7 @@ def load_css():
             border: none !important;
             box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
             transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-            width: 100%; /* Makes buttons responsive to column width */
+            width: 100%;
         }
 
         button:hover {

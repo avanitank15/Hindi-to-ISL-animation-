@@ -28,21 +28,33 @@ st.set_page_config(page_title="Home", layout="wide")
 load_css()
 page_transition("fade")
 
-# 3. HOME PAGE SPECIFIC OVERRIDES (Keeping your Blue/Indigo Theme)
+# 3. HOME PAGE SPECIFIC OVERRIDES
 st.markdown(
     """
     <style>
-    /* ===== Top moving bar (Blue Theme) ===== */
+    :root {
+        --bottombar-height: 56px;
+    }
+
+    /* Prevent overlap with fixed bottom bar */
+    .stApp {
+        padding-bottom: var(--bottombar-height);
+    }
+
+    /* ===== Bottom moving bar (Blue Theme) ===== */
     .top-bar {
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
+        height: var(--bottombar-height);
         background: linear-gradient(90deg, #2563eb, #4f46e5, #2563eb);
         color: white !important;
         font-weight: 600;
-        padding: 12px 0;
-        z-index: 999999; /* Higher than Streamlit header */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
         overflow: hidden;
     }
 
@@ -55,14 +67,10 @@ st.markdown(
 
     @keyframes moveText {
         from { transform: translateX(100%); }
-        to { transform: translateX(-100%); }
+        to   { transform: translateX(-100%); }
     }
 
-    /* Push content below the fixed bar */
-    .main .block-container {
-        padding-top: 100px !important;
-    }
- /* ===== Floating background shapes ===== */
+    /* ===== Floating background shapes ===== */
     .float-shape {
         position: fixed;
         border-radius: 50%;
@@ -90,18 +98,16 @@ st.markdown(
     }
 
     @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-30px); }
+        0%   { transform: translateY(0px); }
+        50%  { transform: translateY(-30px); }
         100% { transform: translateY(0px); }
     }
-
-    
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# ---------- TOP BAR ----------
+# ---------- BOTTOM BAR ----------
 st.markdown(
     """
     <div class="top-bar">
@@ -119,6 +125,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 # ---------- CONTENT ----------
 st.title("Home")
 st.write("Welcome to the Hindi-ISL Bridge")
