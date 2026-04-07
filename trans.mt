@@ -1,1 +1,1 @@
-Today the weather is beautiful.
+I am hungry.

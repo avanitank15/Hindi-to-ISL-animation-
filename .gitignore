@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 hemant/m2m100_ct2_12b/
+*.db
+*.zip
