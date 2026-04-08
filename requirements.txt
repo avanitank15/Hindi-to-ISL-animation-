@@ -1,0 +1,30 @@
+# Web Framework
+streamlit==1.28.1
+
+# Data Processing & Utilities
+numpy==1.24.3
+pandas==2.1.3
+scipy==1.11.4
+
+# Machine Translation & NLP
+spacy==3.7.2
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+ctranslate2==3.24.0
+transformers==4.35.2
+
+# Audio Processing
+librosa==0.10.0
+soundfile==0.12.1
+
+
+# Data Processing & Utilities
+numpy==1.24.3
+pandas==2.1.3
+scipy==1.11.4
+
+# HTTP & API
+requests==2.31.0
+urllib3==2.1.0
+
+# Development & Utilities
+python-dotenv==1.0.0

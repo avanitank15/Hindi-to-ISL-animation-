@@ -59,3 +59,21 @@ I	I I
 स्वागत है आपका	Welcome to you.
 नमस्कार, स्वागत है आपका	Hi, welcome to you.
 मुझे भूख लगी है	I am hungry.
+आज मेरे दोस्त को बाजार जाना है	My husband is going to the market today.
+आज मेरे दोस्त को बाजार जाना है	My husband is going to the market today.
+आज मेरे मित्र को बाजार जाना है	My husband is going to the market today.
+आज मेरे भाई को बाजार जाना है	My husband is going to the market today.
+आज मुझे शाम को बाजार जाना है	I have to go to the market tonight.
+कल शाम को	tomorrow evening
+कल शाम को	tomorrow evening
+Could not understand audio	Couldn't understand the audio
+Could not understand audio	Couldn't understand the audio
+आज मुझे शाम को बाजार जाना है	I have to go to the market tonight.
+Could not understand audio	Couldn't understand the audio
+1	1st
+एक	A one
+नही	not
+ना	No is
+बहुत गर्मी है हमें बाहर जाना चाहिए	It’s hot, we have to go out.
+Could not understand audio	Couldn't understand the audio
+Could not understand audio	Couldn't understand the audio
