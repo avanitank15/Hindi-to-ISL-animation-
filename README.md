@@ -4,7 +4,7 @@ A college project that converts Hindi text to Indian Sign Language (ISL) animati
 
 ##  Overview
 
-This project is a third-year college initiative designed to bridge the communication gap by translating Hindi text into Indian Sign Language (ISL) animations. The system leverages machine translation and animation technologies to create accessible content for the deaf and hard-of-hearing community.
+This project is a third-year college initiative designed to bridge the communication gap by translating Hindi text into Indian Sign Language (ISL) animations.
 
 ## Features
 
@@ -21,12 +21,6 @@ This project is a third-year college initiative designed to bridge the communica
 - **Frontend**: Web-based interface
 
 ## Installation & Setup
-
-###  Prerequisites
-
-- Python 3.8 or higher
-- pip package manager
-- Git
 
 ###  Steps
 
@@ -51,13 +45,6 @@ This project is a third-year college initiative designed to bridge the communica
    ```bash
    streamlit run app.py
    ```
-
-##  Usage
-
-1. Enter Hindi text in the input field
-2. Click "Translate to ISL"
-3. View the generated ISL animation
-4. Save or share the animation as needed
 
 ## Project Structure
 
@@ -85,10 +72,6 @@ Ensure the model path is correctly configured in your application settings:
 Model Location: hemant/m2m100_ct2_12b/
 ```
 
-## License
-
-This project is a college assignment. See the repository for more details.
-
 
 ## Issues
 
@@ -96,19 +79,6 @@ If you encounter any issues:
 - Check that the model is correctly placed in `hemant/m2m100_ct2_12b/`
 - Verify all dependencies are installed
 - Ensure Python 3.8+ is installed
-
-##  Future Enhancements
-
-- [ ] Support for more Indian languages
-- [ ] Improved animation quality and realism
-- [ ] Mobile app version
-- [ ] Real-time translation
-- [ ] User feedback and testing with ISL community
-
-## Acknowledgments
-
-- Meta AI for the M2M100 translation model
-- The ISL and deaf community for guidance and feedback
 
 ---
 
