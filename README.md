@@ -1,4 +1,4 @@
-# Hindi to ISL Animation 🎬
+# Hindi to ISL Animation
 
 A college project that converts Hindi text to Indian Sign Language (ISL) animations.
 
@@ -12,13 +12,6 @@ This project is a third-year college initiative designed to bridge the communica
 - **Animation Generation** - Creates visual animations representing ISL signs
 - **Web-based Interface** - User-friendly website for easy access and translation
 - **Multi-language Support** - Built-in machine translation capabilities
-
-## 🛠️ Tech Stack
-
-- **Language**: Python
-- **Machine Translation**: M2M100 (Meta's Many-to-Many Multilingual Model)
-- **Model Size**: M2M100 1.2B CT2 INT8 
-- **Frontend**: Web-based interface
 
 ## Installation & Setup
 
@@ -71,6 +64,12 @@ Ensure the model path is correctly configured in your application settings:
 ```
 Model Location: hemant/m2m100_ct2_12b/
 ```
+## Tech Stack
+
+- **Language**: Python
+- **Machine Translation**: M2M100 (Meta's Many-to-Many Multilingual Model)
+- **Model Size**: M2M100 1.2B CT2 INT8 
+- **Frontend**: Web-based interface
 
 
 ## Issues
